@@ -7,8 +7,6 @@ This is a Python script that extracts the supported language pairs from CXServer
 
 The file does not directly determine the supported translation pairs, which are determined by the handler keys in the other YAML files in the config directory. However, the default engine specified in mt-defaults.wikimedia.yaml can be used as a fallback if no other engine is specified for a particular pair.
 
-The file does not directly determine the supported translation pairs, which are determined by the handler keys in the other YAML files in the config directory. However, the default engine specified in mt-defaults.wikimedia.yaml can be used as a fallback if no other engine is specified for a particular pair.
-
 # Requirements
  Python 
  PyYAML module
