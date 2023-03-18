@@ -3,7 +3,11 @@ This is my submission to the task #T331201.
 
 This is a Python script that extracts the supported language pairs from CXServer configuration files and exports them to a CSV file.
 ### Please consider the mt-defaults.wikimedia.yaml file and what its effect might be on the supported translation pairs and default translation engine for each pair.
- the mt-defaults.wikimedia.yaml file provides default settings for machine translation services used in Wikimedia projects, including the Content Translation service. While it does not directly determine the supported translation pairs, it can be used as a fallback if no other engine is specified for a particular pair.
+ the mt-defaults.wikimedia.yaml file provides default settings for machine translation services used in Wikimedia projects, including the Content Translation service. While it does not directly determine the supported translation pairs, it can be used as a fallback if no other engine is specified for a particular pair. The file specifies the default translation engine for each language pair, as well as various other options such as the maximum length of texts that can be translated.
+
+The file does not directly determine the supported translation pairs, which are determined by the handler keys in the other YAML files in the config directory. However, the default engine specified in mt-defaults.wikimedia.yaml can be used as a fallback if no other engine is specified for a particular pair.
+
+The file does not directly determine the supported translation pairs, which are determined by the handler keys in the other YAML files in the config directory. However, the default engine specified in mt-defaults.wikimedia.yaml can be used as a fallback if no other engine is specified for a particular pair.
 
 # Requirements
  Python 
