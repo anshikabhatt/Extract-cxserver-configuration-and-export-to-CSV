@@ -41,9 +41,13 @@ for filename in os.listdir("config"):
             # Add the supported pairs to the list
             for k in range(len(source_lang)):
                 for i in target_langs[k]:
+                   source = source_lang[k] if source_lang[k] is not False else "no"
+                    target = i if i is not False else "no" 
                     supported_pairs.append({
                         "source language": source_lang[k],
                         "target language": i,
+                        "source language": source,
+                        "target language": target,
                         "translation engine": engine,
                         "is preferred engine?": preferred_engine
                     })
